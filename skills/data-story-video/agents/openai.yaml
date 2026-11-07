@@ -1,0 +1,4 @@
+interface:
+  display_name: "근거 기반 차트 영상"
+  short_description: "HIS01처럼 실제 기록과 움직이는 차트로 설명하는 무음 영상 제작"
+  default_prompt: "$data-story-video로 이 자료를 HIS01 스타일의 근거 기반 무음 영상으로 만들어줘."

@@ -1,0 +1,14 @@
+{
+  "video": "DEMO.mp4",
+  "width": 1080,
+  "height": 1350,
+  "fps": 30,
+  "frames": 750,
+  "seconds": 25.0,
+  "audio": false,
+  "fullDecode": "passed",
+  "sha256": "bb223035bd23d4997834be1a5564eeaf28f0099122387f59c0f81a7352c7b5bb",
+  "synthetic": true,
+  "historicalClaimsVerified": false,
+  "note": "Media validation only; compare data and narrative with original evidence separately."
+}

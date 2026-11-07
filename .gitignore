@@ -1,0 +1,13 @@
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.vite-cache/
+.env
+.env.*
+**/his01-starter/assets/
+**/his01-starter/charts/
+**/his01-starter/work/
+**/his01-starter/output/
+my-video/

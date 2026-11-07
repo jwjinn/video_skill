@@ -1,0 +1,26 @@
+name: Verify portable video starter
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-cjk
+      - run: python3 scripts/check_package.py
+      - run: python3 -m pip install -r skills/data-story-video/assets/his01-starter/requirements.txt
+      - run: npm ci --ignore-scripts && npx playwright install --with-deps chromium && npm run check && npm run render
+        working-directory: skills/data-story-video/assets/his01-starter/motion-canvas
+      - run: python3 render.py --redraw
+        working-directory: skills/data-story-video/assets/his01-starter
+      - uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-demo
+          path: skills/data-story-video/assets/his01-starter/output/

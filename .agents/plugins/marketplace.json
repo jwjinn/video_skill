@@ -1,0 +1,20 @@
+{
+  "name": "video-skill",
+  "interface": {
+    "displayName": "Video Skill by jwjinn"
+  },
+  "plugins": [
+    {
+      "name": "data-story-video",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
