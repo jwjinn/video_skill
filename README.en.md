@@ -1,6 +1,6 @@
 # Data Story Video
 
-A reusable agent skill and local rendering starter for **silent, evidence-based explainer videos**: one question, moving data, familiar examples, and short explanations beneath each chart.
+A reusable agent skill and local rendering starter for **silent, evidence-based explainer videos**: current audience and visual-reference research, one question, moving data, familiar examples, and short explanations beneath each chart.
 
 [한국어](README.md) · [Skill](skills/data-story-video/SKILL.md) · [Rendering contract](skills/data-story-video/references/rendering.md)
 
@@ -61,3 +61,7 @@ The pipeline uses Motion Canvas → Pillow text overlays → FFmpeg. Defaults: 1
 Edit episode.json, chart-catalog.json, motion-canvas/data/sample.csv and motion-canvas/src/scene.ts to use your own material. See the rendering contract before cropping a new chart. The code verifies media properties and full decoding; it does **not** establish historical truth or automatically generate the final technical article. The skill guides an agent through that evidence and writing work.
 
 This repository's code and documentation are MIT-licensed. Dependencies retain their own licenses; see [THIRD_PARTY.md](THIRD_PARTY.md). The plugin layout follows the [official OpenAI plugin documentation](https://developers.openai.com/plugins/build/plugins).
+
+## Research before production
+
+For a new topic or substantial recut, research recent audience questions and inspect actual visual references before scripting. Match relevant angles to the user’s own evidence, record dates, original URLs, watched segments, and application decisions, and save the findings in the production package and self-contained episode Markdown. Narrow corrections reuse existing research. External trends guide framing; they do not establish the user’s historical claims. See the [research workflow](skills/data-story-video/references/preproduction-research.md).
