@@ -21,7 +21,7 @@ cd ..
 python3 render.py --redraw
 ```
 
-On Linux without browser system libraries, use `npx playwright install --with-deps chromium` (may require administrator privileges). On Windows use `.venv\Scripts\activate` instead of the POSIX activation command. Output: `output/DEMO.mp4` and `output/DEMO-validation.json`. Font/browser/package installation requires network access; the video pipeline itself runs locally.
+The CI environment is pinned to Ubuntu 24.04, a supported browser target. On Linux without browser system libraries, use `npx playwright install --with-deps chromium` (may require administrator privileges). Newer distributions may require a supported container image or an updated Playwright version. On Windows use `.venv\Scripts\activate` instead of the POSIX activation command. Output: `output/DEMO.mp4` and `output/DEMO-validation.json`. Font/browser/package installation requires network access; the video pipeline itself runs locally.
 
 ## Inputs
 
